@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <Navbar/>
+        <AppForm/>
         <CardContainer :allApplications="allApplications" :key="componentKey" />
     </div>
 </template>
@@ -8,6 +9,7 @@
 <script>
 
 import CardContainer from './components/CardContainer.vue'
+import AppForm from './components/AppForm.vue'
 import Navbar from './components/Navbar.vue'
 
 export default {
@@ -43,6 +45,7 @@ export default {
         }
     },
     components: {
+        AppForm,
         CardContainer,
         Navbar
     }
