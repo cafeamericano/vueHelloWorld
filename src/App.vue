@@ -27,7 +27,7 @@ export default {
     methods: {
         pullApplications() {
             var self = this;
-            fetch("https://central-api-go.appspot.com/AppGalleryLite/api/applications").then(function (response) {
+            fetch("https://central-api-flask-cm6ud432ka-uc.a.run.app/AppGalleryLite/api/applications").then(function (response) {
                 return response.json();
             }).then(function (result) {
                 self.allApplications = result;
@@ -36,7 +36,7 @@ export default {
         },
         pullKeywords() {
             var self = this;
-            fetch("https://central-api-go.appspot.com/AppGalleryLite/api/keywords").then(function (response) {
+            fetch("https://central-api-flask-cm6ud432ka-uc.a.run.app/AppGalleryLite/api/keywords").then(function (response) {
                 return response.json();
             }).then(function (result) {
                 self.todos = result;

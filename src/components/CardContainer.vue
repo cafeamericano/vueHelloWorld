@@ -1,5 +1,5 @@
 <template>
-    <div class='container'>
+    <div>
         <div v-for='item in allApplications' :key='item.title'>
             <AppCard v-bind='item' />
         </div>
